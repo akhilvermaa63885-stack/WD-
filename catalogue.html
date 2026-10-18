@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogue | GL Bajaj Book Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="site">
+        <!-- TOP: logo, college name, links -->
+        <div class="logo">
+            <img src="library-book-reading-abstract-icon-or-emblem-vector.jpg" alt="GL Bajaj Library Logo" class="logo-img">
+        </div>
+        <div class="title">
+            <h1>GL Bajaj Institute Of Technology</h1>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="registration.html">Registration</a>
+            <a href="catalogue.html" class="active">Catalogue</a>
+            <a href="cart.html">Cart</a>
+        </nav>
+        <!-- LEFT: branch links -->
+        <aside>
+            <h3>Branches</h3>
+            <a href="catalogue.html?branch=CSE" data-branch="CSE">CSE</a>
+            <a href="catalogue.html?branch=CSIT" data-branch="CSIT">CSIT</a>
+            <a href="catalogue.html?branch=CSAI" data-branch="CSAI">CSAI</a>
+            <a href="catalogue.html?branch=ECE" data-branch="ECE">ECE</a>
+            <a href="catalogue.html?branch=EEE" data-branch="EEE">EEE</a>
+            <a href="catalogue.html?branch=CIVIL" data-branch="CIVIL">CIVIL</a>
+        </aside>
+        <!-- RIGHT: page content -->
+        <main>
+            <h2 id="catTitle">Book Catalogue</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Book Preview</th>
+                        <th>Book Details</th>
+                        <th>Price</th>
+                        <th>Cart Action</th>
+                    </tr>
+                </thead>
+                <tbody id="books"></tbody>
+            </table>
+            <p id="added" class="ok"></p>
+        </main>
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2024 GL Bajaj Institute of Technology &amp; Management | Department of Computer Science &amp; Engineering</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
